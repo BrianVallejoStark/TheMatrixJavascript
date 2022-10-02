@@ -16,11 +16,12 @@ function matrix () {
     ctx.font = "15pt monospace";
     
     pos_y.forEach((y,ind) => {
-        const text = String.fromCharCode(Math.random() * 128);
-        const x = ind * 20;
+       /* const text = String.fromCharCode(Math.random() * 128);*/
+        const text = "HOLA MUNDO";
+        const x = ind * 120;
         ctx.fillText(text, x, y);
         if (y > 100 + Math.random() * 10000) pos_y[ind] = 0;
         else pos_y[ind] = y + 25;
     });
 }
-setInterval(matrix, 50);
+setInterval(matrix, 80);
